@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your website description here">
+    <meta name="keywords" content="keywords related to your website">
+    <meta name="author" content="Your Name">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav>
+    <div class="nav">
+        <div class="logo"><img src="logo.png" alt=""><span>Music player</span></div>
+     <ul class="ak">
+        <li>Home</li>
+        <li>Hindi</li>
+        <li>Haryana</li>
+        <li>Punjabi</li>
+        <li>English</li>
+        <li>Bollywood</li>
+        <li>About</li>
+        <li>  <form action="/search" method="GET">
+          <input type="text" name="query" placeholder="Search..." required>
+          <button type="submit">Search</button>
+      </form></li>
+      </ul>
+    </div>
+</nav>
+  <div class="songlist">
+    <ul class="songlist">
+      <li class="song-item" >Song 1</li>
+      <li class="song-item">Song 2</li>
+      <li class="song-item">Song 3</li>
+      <li class="song-item" >Song 4</li>
+      <li class="song-item" >Song 5</li>
+      <li class="song-item" >Song 6</li>
+      <li class="song-item" >Song 7</li>
+      <li class="song-item" >Song 8</li>
+      <li class="song-item" >Song 9</li>
+      <li class="song-item" >Song 10</li>
+
+  </ul>
+  </div>
+  <div class="container">
+    <h1>Now Playing: <span id="songName">None</span></h1>
+    <audio id="audioPlayer" controls></audio>
+  </div>
+   
+
+<script src="index.js"></script>
+</body>
+</html>
